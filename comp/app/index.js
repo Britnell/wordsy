@@ -36,7 +36,7 @@ const App = ({ answer }) => {
   return (
     <>
       <header>
-        <h1>WOrdsy</h1>
+        <h1>WORDSY</h1>
       </header>
       <main className={styles.main}>
         <div className={styles.guesses}>

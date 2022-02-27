@@ -14,7 +14,9 @@ export default function Home(props) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <App answer={answer} />
-      <footer>Made by me</footer>
+      <footer>
+        <p>Made by me</p>
+      </footer>
     </>
   );
 }

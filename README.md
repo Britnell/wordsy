@@ -1,8 +1,8 @@
-As a little coding challenge I built a world clone
-[https://www.powerlanguage.co.uk/wordle/](https://www.powerlanguage.co.uk/wordle/)
-
+As a little coding challenge I built a clone of Wordle : [https://www.powerlanguage.co.uk/wordle/](https://www.powerlanguage.co.uk/wordle/)
 The original is obviously the best, and has a much nicer vocabulary.
 This was a little coding challenge to implement this with next.js
+
+This offers unlimited words but does not track scores or anything
 
 # Dictionary
 

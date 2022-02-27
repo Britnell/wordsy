@@ -1,0 +1,78 @@
+.main {
+  max-width: 390px;
+  margin: auto;
+
+  padding: 1rem;
+}
+
+.guesses {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.letter {
+  flex: 0 auto;
+
+  background-color: var(--main);
+  /* border: 2px solid var(--grey); */
+  width: 4rem;
+  height: 4rem;
+  border-radius: 6px;
+
+  margin: 0.2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* vertical-align: middle; */
+}
+
+.letter span {
+  text-transform: uppercase;
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+.match {
+  border: 2px solid var(--match);
+  background-color: var(--match);
+}
+.included {
+  border: 3px solid var(--match);
+  /* background-color: var(--included); */
+}
+
+.inputcontainer {
+  position: relative;
+}
+
+.inputdiv {
+  /* height: 4rem; */
+
+  /* display: flex;
+  align-items: center; */
+  /* overflow: hidden; */
+}
+.input {
+  height: 4rem;
+  width: 100%;
+
+  border: 2px solid var(--grey);
+  border-radius: 6px;
+  margin: 0.2rem;
+
+  font-family: "Courier New", Courier, monospace;
+  font-size: 2.5rem;
+  font-weight: 600;
+  /* border: none; */
+  padding: 0 1rem;
+  letter-spacing: 2.5rem;
+  text-transform: uppercase;
+}
+.input:focus {
+  outline: none;
+}
+
+.meaning {
+  font-family: "Courier New", Courier, monospace;
+}

@@ -1,0 +1,21 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  --match: rgb(158, 221, 133);
+  --main: hsl(44, 100%, 89%);
+  --grey: rgb(163, 163, 163);
+
+  --included: rgb(218, 205, 25);
+
+  --main-light: hsl(198, 100%, 90%);
+}

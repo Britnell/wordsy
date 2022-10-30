@@ -22,7 +22,6 @@ const Guess = ({ guess, answer }) => {
           </div>
         );
       })}
-      {/* {guess === answer && <Answer answer={answer} />} */}
     </>
   );
 };

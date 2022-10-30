@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Guess from "./guess";
 import styles from "./app.module.css";
 import GuessInput from "./input";
+import Keyboard from "./keyboard";
 
 const Solved = ({ restart, meanings }) => (
   <div>
@@ -10,8 +11,8 @@ const Solved = ({ restart, meanings }) => (
       <button onClick={restart}>Play again</button>
     </div>
     <div>
-      {meanings.map((m) => (
-        <p className={styles.meaning}>
+      {meanings.map((m, i) => (
+        <p key={i} className={styles.meaning}>
           [{m.speech_part}] - {m.def}
         </p>
       ))}
@@ -34,7 +35,7 @@ const App = ({ answer }) => {
   }, []);
 
   return (
-    <>
+    <div className={styles.container}>
       <header>
         <h1>WORDSY</h1>
       </header>
@@ -50,21 +51,9 @@ const App = ({ answer }) => {
           <GuessInput makeGuess={makeGuess} />
         )}
       </main>
-    </>
+      <Keyboard guesses={guesses} answer={answer} />
+    </div>
   );
 };
 
 export default App;
-
-// const [meanings, setMeanings] = useState([]);
-// useEffect(() => {
-//   if (guesses.length > 0) {
-//     const last = guesses[guesses.length - 1];
-//     fetch(`/api/word/meaning?word=${last}`)
-//       .then((res) => res.json())
-//       .then((res) => {
-//         const lastMeanings = res.meaning.meanings;
-//         setMeanings([...meanings, lastMeanings]);
-//       });
-//   }
-// }, [guesses]);

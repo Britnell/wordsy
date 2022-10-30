@@ -39,7 +39,6 @@ footer p {
 main {
   max-width: 390px;
   margin: auto;
-
   padding: 1rem;
   min-height: calc(100vh - 5rem - 0rem);
   margin-bottom: 4rem;

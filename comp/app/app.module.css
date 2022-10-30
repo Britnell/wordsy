@@ -1,3 +1,7 @@
+.main {
+  margin-bottom: 10rem;
+}
+
 .guesses {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
